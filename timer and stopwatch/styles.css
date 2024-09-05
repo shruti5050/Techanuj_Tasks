@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1c1c1c;
+    background-image: radial-gradient(circle, #3a3a3a, #1c1c1c);
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background: #282828;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 350px;
+}
+
+.glitter {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+}
+
+.display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff00cc, #3333ff, #00ff99, #ff9900);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.btn {
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #ff00cc, #3333ff);
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #3333ff, #ff00cc);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+button:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+.splits-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.splits-container p {
+    margin: 5px 0;
+    color: #ffd700;
+    font-size: 18px;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+@keyframes glitter {
+    0%, 100% {
+        transform: translateX(-10px) translateY(5px) scale(1.1);
+    }
+    50% {
+        transform: translateX(10px) translateY(-5px) scale(1);
+    }
+}

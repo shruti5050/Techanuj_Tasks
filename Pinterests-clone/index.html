@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Boards</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        <h1>Pinterests</h1>
+        <input type="text" id="search" placeholder="Search...">
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="grid" id="grid">
+            <!-- Pins will be dynamically loaded here -->
+        </div>
+        <button id="load-more">Load More</button>
+    </main>
+    
+    <!-- Modal for Image Preview -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

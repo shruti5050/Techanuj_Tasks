@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <img id="album-art" src="ah.png" alt="Album Art">
+        <h2 id="song-title">Song Title</h2>
+        <h3 id="song-artist">Artist Name</h3>
+        <audio id="audio" src="song1.mp3"></audio>
+        
+        <div class="controls">
+            <button id="prev">⏮️</button>
+            <button id="play">▶️</button>
+            <button id="next">⏭️</button>
+            <button id="shuffle">🔀</button>
+            <button id="repeat">🔁</button>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress"></div>
+        </div>
+
+        <div class="extra-controls">
+            <input type="range" id="volume-control" min="0" max="100" value="80">
+            <button id="mute">🔇</button>
+        </div>
+
+        <div class="playlist">
+            <ul>
+                <li data-index="0">Ram Siya Ram - Sachet Tandon, Parampara Tandon</li>
+                <li data-index="1">Karpurgauram_Karuravataram - Abhilipsa Panda</li>
+                <li data-index="2">MAHABHARAT_RAP - abbyviral</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

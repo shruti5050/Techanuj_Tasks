@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f4f1; /* Light brown background */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border: 1px solid #d8cfc4; /* Light brown border */
+}
+
+h1 {
+    color: #6f4f28; /* Dark brown for the heading */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #8e735b; /* Medium brown for labels */
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #bfa89f; /* Light brown border for inputs */
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+input[type="text"] {
+    background-color: #f1e7e1; /* Very light brown background */
+    color: #6f4f28; /* Dark brown text */
+}
+
+button {
+    background-color: #a67f5e; /* Medium brown for the button */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8c5d3f; /* Darker brown for hover effect */
+}

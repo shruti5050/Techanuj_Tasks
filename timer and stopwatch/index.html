@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Timer or Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="initial-screen" class="glitter">
+            <h1>What would you like to use?</h1>
+            <button id="choose-timer" class="btn">Timer</button>
+            <button id="choose-stopwatch" class="btn">Stopwatch</button>
+        </div>
+
+        <div id="timer-section" class="glitter" style="display: none;">
+            <h1>Timer</h1>
+            <div id="timer-display" class="display">00:00:00</div>
+            <button id="start-timer" class="btn">Start Timer</button>
+            <button id="stop-timer" class="btn">Stop Timer</button>
+            <button id="reset-timer" class="btn">Reset Timer</button>
+        </div>
+
+        <div id="stopwatch-section" class="glitter" style="display: none;">
+            <h1>Stopwatch</h1>
+            <div id="stopwatch-display" class="display">00:00:00</div>
+            <button id="start-stopwatch" class="btn">Start Stopwatch</button>
+            <button id="stop-stopwatch" class="btn">Stop Stopwatch</button>
+            <button id="reset-stopwatch" class="btn">Reset Stopwatch</button>
+            <button id="split-stopwatch" class="btn">Split</button>
+
+            <div id="splits-container" class="splits-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
